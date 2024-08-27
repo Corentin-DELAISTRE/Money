@@ -1,0 +1,265 @@
+/* GENERAL */
+:root{
+    /* éléments principaux*/
+    --bleuArdoise: #2c3e50;
+    --grisBleuFonce: #34495e;
+    --bleuNuit: #273746;
+    /* boutons d'action et les éléments interactifs */
+    --bleuTurquoise:#3498DB;
+    /*  éléments de validation et de réussite */
+    --vertEmeraude: #2ECC71;
+    /* echec ou refus */
+    --rouge: #ec3f3f;
+    /*  éléments de mise en évidence et de détail */
+    --violetAmethyste: #694d75;
+    /* Textes secondaires et infos complémentaires */
+    --grisArdoise: #95a5a6;
+    /* Fond */
+    --grisPale: #ecf0f1;
+    /* BLANC ET NOIR */
+    --black: #000000;
+    --white: #ffffff;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(../assets/font/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(../assets/font/Raleway-VariableFont_wght.ttf);
+}
+body{
+    background-color: var(--bleuArdoise);
+    color: var(--grisPale);
+    font-family: "Nunito";
+    font-size: 18px;
+}
+/*BOUTTONS*/
+.projbtn{
+    padding: 5px 16px;
+    background-color: var(--vertEmeraude);
+    border-radius: 5px;
+}
+.refusbtn{
+    padding: 5px 16px;
+    background-color: var(--rouge);
+    border-radius: 5px;
+}
+.backtolistbtn{
+    padding: 5px 16px;
+    background-color: var(--grisPale);
+    color: var(--black)!important;
+    border-radius: 5px;
+}
+.invbtn{
+    padding: 5px 16px;
+    background-color: var(--bleuTurquoise);
+    border-radius: 5px;
+}
+.actionbtn{
+    padding: 5px 16px;
+    background-color: var(--bleuTurquoise);
+    color: var(--grisPale);
+    font-size: 16px;
+}
+.backbtn{
+    padding: 1px 16px;
+    background-color: var(--grisPale);
+    color: var(--black)!important;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.desbtn{
+    padding: 1px 16px;
+    background-color: var(--bleuTurquoise);
+    color: var(--grisPale);
+    font-size: 16px;
+    border-radius: 5px;
+}
+/*TITRES*/
+.hero h1{
+    font-family: "Raleway";
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--white);
+    top: 350px;
+    left: 50px;
+}
+h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+/* LIENS */
+a{
+    text-decoration: none;
+    color:var(--grisPale);
+    font-size: 20px;
+    font-weight: 500;
+}
+a:visited{
+    color:var(--grisPale);
+}
+a:hover{
+    text-decoration: underline;
+}
+/*INPUTS*/
+input{
+    background-color: var(--grisPale);
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+textarea{
+    border-radius: 5px;
+    background-color: var(--grisPale);
+    border: none;
+    padding: 5px;
+}
+/*HEADER*/
+header{
+    height: 10vh;
+    background-color: var(--bleuArdoise);
+    top: 0;
+    z-index: 10;
+    box-shadow: #000000 0 5px 15px;
+}
+.logo-title{
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 24px;
+}
+.logo-div{
+    border-radius: 50%;
+}
+.logo-div img{
+    border-radius: 50%;
+}
+/*INDEX*/
+.hero{
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 35%;
+    background-image: url(../assets/images/hero_bg.jpg);
+}
+.filter{
+    background: linear-gradient(90deg,#2c3e50 20%,rgba(0,0,0,0));
+}
+.card{
+    background-color: var(--grisPale);
+    border-radius: 8px;
+    color: var(--bleuArdoise);
+}
+.card:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: scale linear 0.3s;
+}
+.card img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.horloge{
+    width: 24px;
+}
+.proj-titre{
+    font-size: 24px;
+}
+.connexion{
+    top:10vh;
+    right: 0;
+    background-color: var(--grisPale);
+    color: var(--bleuArdoise);
+    padding: 16px 32px;
+}
+.connexion a{
+    color: var(--bleuArdoise);
+}
+/*MESSAGE ET REDIRECTION*/
+.message-conf{
+    font-size: 24px;
+}
+/*ACCEUIL COMPTE*/
+.projets-valide{
+    background-color: var(--bleuNuit);
+    border-radius: 8px;
+}
+/*GESTION MEMBRE*/
+.membre-table{
+    border: 1px solid #95a5a6;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+}
+.membre-table th {
+    border: 1px solid #95a5a6;
+    background-color: #3498db;
+    color: #ecf0f1;
+    padding: 5px;
+}
+.membre-table td {
+    border: 1px solid #95a5a6;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 5px;
+}
+.table-icon{
+    width: 32px;
+}
+/*FORMULAIRE DE CREATION DE MEMBRE*/
+fieldset{
+    border: none;
+}
+/*DETAIL PROPOSITION*/
+.left-infos{
+    background-color: var(--bleuNuit);
+}
+.infos-img{
+    bottom: 0;
+    left: 0;
+    background: rgb(39,55,70);
+    background: linear-gradient(0deg, rgba(39,55,70,1) 0%, rgba(39,55,70,0.7) 70%, rgba(39,55,70,0) 100%);
+}
+.infos-img h3{
+    font-size: 32px;
+}
+.montant-demande{
+    font-size: 32px;
+    font-weight: 800;
+}
+.coord{
+    background-color: var(--bleuNuit);
+}
+.coord ul{
+    list-style: none;
+}
+.coord h3{
+    font-size: 24px;
+}
+/*DETAILS PROJETS*/
+.financement{
+    background-color: var(--bleuNuit);
+}
+.jauge{
+    height: 10px;
+}
+.promis{
+    background-color:var(--bleuTurquoise);
+    border-right: solid 2px var(--black);
+}
+.restant{
+    background-color: var(--grisArdoise);
+}
+/*FORMULAIRE DE PROMESSE DE FINANCEMENT*/
+.promesse-form{
+    background-color: var(--bleuNuit);
+    height: fit-content;
+    border-radius: 10px;
+}
